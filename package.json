@@ -1,6 +1,6 @@
 {
-  "name": "video.js",
-  "description": "An HTML5 and Flash video player with a common API and skin for both.",
+  "name": "video-angularwidget.js",
+  "description": "An example of video.js controls using angular.",
   "version": "4.10.2",
   "copyright": "Copyright 2014 Brightcove, Inc. https://github.com/videojs/video.js/blob/master/LICENSE",
   "keywords": [
