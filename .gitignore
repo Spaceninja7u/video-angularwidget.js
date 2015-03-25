@@ -22,3 +22,4 @@ sandbox/*
 
 *results.xml
 *.log
+src/css/*.css
