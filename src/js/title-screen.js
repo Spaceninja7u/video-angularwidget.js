@@ -9,57 +9,21 @@ vjs.TitleScreen = vjs.Component.extend({
 vjs.TitleScreen.prototype.createEl = function() {
     var template = '<div class="container-fluid">'
                     +'<div class="row">'
-                        +'<div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">'
-                        +'<a class="card-panel stats-card brown brown-text text-lighten-5" href="#" ng-click="player.play()">'
-                            +'<span class="title">{{currentVideo.title}}</span>'
-                        +'</a>'
-                        +'</div>'
-                    +'</div>'
-                    +'<div class="row">'
-                        +'<div class="col-lg-9 col-md-9 col-sm-10 col-xs-10">'
-                        +'<a class="card-panel stats-card green lighten-2 green-text text-lighten-5" href="#" ng-click="player.play()">'
-                            + '<p>{{currentVideo.description}}</p>'
-                        +'</a>'
-                    +'</div>'
-                    +'<div class="col-lg-3 col-md-3 col-sm-2 col-xs-2 ">'
-                        +'<a class="card-panel play stats-card green darken-1 green-text text-lighten-5" href="#" ng-click="player.play()">'
-                            +'<p><i class="fa fa-play fa-4x"></i></p>'
-                        +'</a>'
-                    +'</div>'
-                    +'</div>'
-
-                    +'<div class="row">'
-                        +'<div class="col-lg-9 col-md-9 col-sm-10 col-xs-10">'
-                            +'<div class="card blue lighten-4 blue-text text-darken-2">'
-                                +'<div class="title blue lighten-3 blue-text text-darken-3">'
-                                + '<h5>Previous Video</h5>'
-                                +'</div>'
-                                    +'<div class="content">'
-                                        +'<div class="col">'
-                                        +'<a ui-sref="videojsview({index:itemIndex})">{{prevVideo.title}}</a>'
-
-                                        +'</div>'
-                                    +'</div>'
-                            +'</div>'
-                        +'</div>' //col
-                     +'</div>' //row
-        +'<div class="row">'
-            +'<div class="col-lg-9 col-md-9 col-sm-10 col-xs-10">'
-                +'<div class="card blue lighten-4 blue-text text-darken-2">'
-                    +'<div class="title blue lighten-3 blue-text text-darken-3">'
-                        + '<h5>Next Video</h5>'
-                    +'</div>'
-                +'<div class="content">'
-                    +'<div class="col">'
-                        +'<a ui-sref="videojsview({index:itemIndex})">{{nextVideo.title}}</a>'
-                    +'</div>'
-                +'</div>'
-            +'</div>' //col
-        +'</div>'; //row
-
-
+                        +'<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">'
+                         +'<div class="jumbotron">'
+                            +'<h4>Lifehacker.com</h4>'
+                            +'<h1>{{currentVideo.title}}</h1>'
+                             + '<p><a class="btn btn-link pull-right" href="#" ng-click="play($event)"><i class="fa fa-play fa-4x"></i></a> {{currentVideo.description}} </p>'
+                            +'<div class="container-fluid"><div class="row">'
+                            +'<div class="col-xs-6"><a class="btn btn-flat btn-default btn-block" ng-show="prevVideo != null" ui-sref="videojsview({index:itemIndex})"><i class="fa fa-backward fa-4x pull-left"></i> {{prevVideo.title}}</a></div>'
+                            +'<div class="col-xs-6"><a class="btn btn-flat btn-default btn-block" ng-show="nextVideo != null" ui-sref="videojsview({index:itemIndex + 2})"><i class="fa fa-forward fa-4x pull-right"></i>{{nextVideo.title}}</a> </div>'
+                       +'</div></div>'
+                 +'</div>' //jumbotron
+             +'</div>' //col
+            +'</div>' //row
+        +'</div>'; //container
     var uiNode = jQuery('<div/>');
-    uiNode.addClass('demo-vjs-titlescreen card-panel');
+    uiNode.addClass('demo-vjs-titlescreen');
     uiNode.html(template);
 
     return uiNode[0];
