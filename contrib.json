@@ -1,7 +1,7 @@
 {
   "project": {
     "owner": "videojs",
-    "name": "video.js",
+    "name": "video-angularwidget.js",
     "requirements": [
       {
         "name": "git",
