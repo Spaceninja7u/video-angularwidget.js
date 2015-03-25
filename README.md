@@ -1,3 +1,5 @@
+This Fork contains example code for how to use Angularjs to create UI elements. It really just serves as a bower devDependency for https://github.com/Spaceninja7u/Videojs-UI-With-Angular.js
+
 ![Video.js logo](https://i.cloudup.com/C3nAUZ-l4c.png)
 
 # [Video.js - HTML5 Video Player](http://videojs.com)  [![Build Status](https://travis-ci.org/videojs/video.js.png?branch=master)](https://travis-ci.org/videojs/video.js)
