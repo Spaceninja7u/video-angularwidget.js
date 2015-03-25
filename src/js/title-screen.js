@@ -13,10 +13,10 @@ vjs.TitleScreen.prototype.createEl = function() {
                          +'<div class="jumbotron">'
                             +'<h4>Lifehacker.com</h4>'
                             +'<h1>{{currentVideo.title}}</h1>'
-                             + '<p><a class="btn btn-link pull-right" href="#" ng-click="play($event)"><i class="fa fa-play fa-4x"></i></a> {{currentVideo.description}} </p>'
+                             + '<p><a class="btn btn-flat btn-info pull-right btn-play" href="#" ng-click="play($event)"><i class="fa fa-play fa-4x"></i></a> {{currentVideo.description}} </p>'
                             +'<div class="container-fluid"><div class="row">'
-                            +'<div class="col-xs-6"><a class="btn btn-flat btn-default btn-block" ng-show="prevVideo != null" ui-sref="videojsview({index:itemIndex})"><i class="fa fa-backward fa-4x pull-left"></i> {{prevVideo.title}}</a></div>'
-                            +'<div class="col-xs-6"><a class="btn btn-flat btn-default btn-block" ng-show="nextVideo != null" ui-sref="videojsview({index:itemIndex + 2})"><i class="fa fa-forward fa-4x pull-right"></i>{{nextVideo.title}}</a> </div>'
+                            +'<div class="col-xs-5"><a class="btn btn-flat btn-default btn-block" ng-show="prevVideo != null" ui-sref="videojsview({index:itemIndex})"><i class="fa fa-backward fa-4x pull-left"></i> {{prevVideo.title}}</a></div>'
+                            +'<div class="col-xs-5"><a class="btn btn-flat btn-default btn-block" ng-show="nextVideo != null" ui-sref="videojsview({index:itemIndex + 2})"><i class="fa fa-forward fa-4x pull-right"></i>{{nextVideo.title}}</a> </div>'
                        +'</div></div>'
                  +'</div>' //jumbotron
              +'</div>' //col
