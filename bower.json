@@ -1,5 +1,5 @@
 {
-  "name": "video.js",
+  "name": "video-angularwidget.js",
   "description": "An HTML5 and Flash video player with a common API and skin for both.",
   "version": "4.10.2",
   "main": [
@@ -19,6 +19,7 @@
     "bower_components",
     "test",
     "tests",
-    "build"
+    "build/compiler",
+    "build/demo-files"
   ]
 }
